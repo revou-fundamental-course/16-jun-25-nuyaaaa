@@ -5,18 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Matematika - nuya</title>
-
-    <!-- CSS External -->
+     <!-- CSS External -->
      <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <!-- Head Content -->
-    <header></header>
+    <h1>Kalkulator Segitiga</h1>
+    <p>Kalkulator ini berisi tentang cara menghitung keliling dan luas segitigas</p>
 
-    <!-- Main Content -->
-    <main></main>
+    <!-- Kalkulator Keliling Segitiga -->
+     <div class="kalkulator">
+        <h2>Hitung keliling Segitiga</h2>
+        <div class="input group">
+            <label for="sisiA">Panjang sisi A:</label>
+            <input type="number" id="sisiA" placeholder="masukkan panjang sisi a" step="0.01" min="0">
+        </div>
+        <div class="input group">
+            <label for="sisiB">Panjang Sisi B:</label>
+            <input type="number" id="sisiB" placeholder="Masukkan panjang sisi b" step="0.01" min="0">
+        </div>
+        <div class="input group">
+            <label for="sisC">Panjang Sisi C:</label>
+            <input type="number" id="sisiC" placeholder="Masukkan panjang sisi c" step="0.01" min="0">
+        </div>
+        <button onclick="hitungKeliling()">Hitung Keliling</button>
+        <div class="formula">Rumus: K = a + b +c</div>
+        <div class="hasil" id="hasilKeliling">Keliling segitiga akan muncul di sini</div>
+     </div>
 
-    <!-- Footer Content -->
-    <footer></footer>
+     <!-- Kalkulator Luas Segitiga -->
+      <div class="kalkulator">
+        <h2>Hitung Luas Segitiga</h2>
+        <div class="input-group">
+            <label for="alas">Panjang Alas (a):</label>
+            <input type="number" id="alas" placeholder="Masukkan panjang alas" step="0.01" min="0">
+        </div>
+        <div class="input-group">
+            <label for="tinggi">Tinggi Segitiga (t):</label>
+            <Input type="number" id="tinggi" placeholder="Masukkan tinggi segitiga" step="0.01" min="0">
+        </div>
+        <button onclick="hitungLuas()">Hitung Luas</button>
+        <div class="formula">Rumus: L = ½ × a × t</div>
+        <div class="hasil" id="hasilLuas">Luas segitiga akan muncul di sini</div>
+      </div>
+
 </body>
 </html>
